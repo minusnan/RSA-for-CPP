@@ -133,6 +133,11 @@ void configure(std::string path) {
         std::cin >> p;
         std::cout << "Enter prime q" << std::endl;
         std::cin >> q;
+        if (!std::cin)
+        {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
     }
 
     int e = getE(p, q);
