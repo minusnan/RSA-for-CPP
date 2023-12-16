@@ -128,7 +128,7 @@ void configure(std::string path) {
     int p = 4;
     int q = 4;
 
-    while (!isPrime(p) && !isPrime(q)) {
+    while (!isPrime(p) || !isPrime(q)) {
         std::cout << "Enter prime p" << std::endl;
         std::cin >> p;
         std::cout << "Enter prime q" << std::endl;
