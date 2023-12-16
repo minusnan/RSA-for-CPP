@@ -5,7 +5,7 @@
 #include <cmath>
 #include <vector>
 #include <filesystem>
-#include<numeric>
+#include <numeric>
 #include "sha256.h"
 
 void encrypt(int p, int q, int e, std::string path);
